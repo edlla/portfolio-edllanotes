@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-floats",
+  "version": "1.0.0",
+  "description": "building layouts with floats",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/master.scss css/app.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edlla/portfolio-floats.git"
+  },
+  "author": "Edlla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edlla/portfolio-floats/issues"
+  },
+  "homepage": "https://github.com/edlla/portfolio-floats#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
