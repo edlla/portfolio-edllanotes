@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('fonts/AdobeClean-Light.woff') format('woff'),
+        url('fonts/AdobeClean-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('fonts/AdobeClean-SemiLight.woff') format('woff'),
+        url('fonts/AdobeClean-SemiLight.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('fonts/AdobeClean-Bold.woff') format('woff'),
+        url('fonts/AdobeClean-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+
+
+body {    
+    font-family: 'Adobe Clean';
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: $default-font-size;
+    color: $color-primary;
+    text-rendering: optimizeLegibility;
+}
+
+*/
+
+

@@ -1,3 +1,7 @@
+/*COLORS*/
+/*=======================================================================*/
+/*FONT SIZE*/
+/*=======================================================================*/
 html {
   font-size: 62.5%; }
 
@@ -11,8 +15,159 @@ body {
   padding: 0;
   box-sizing: inherit; }
 
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url("fonts/AdobeClean-Light.woff") format("woff"), url("fonts/AdobeClean-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url("fonts/AdobeClean-SemiLight.woff") format("woff"), url("fonts/AdobeClean-SemiLight.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url("fonts/AdobeClean-Bold.woff") format("woff"), url("fonts/AdobeClean-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+/*
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+
+
+body {    
+    font-family: 'Adobe Clean';
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: $default-font-size;
+    color: $color-primary;
+    text-rendering: optimizeLegibility;
+}
+
+*/
 .header {
+  height: 95vh;
   background-image: url(../img/hero.jpeg);
   background-size: cover;
-  background-position: center;
-  height: 95vh; }
+  background-position: center; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  text-align: center;
+  background-color: #000;
+  height: 4.5rem;
+  width: 6rem;
+  border-radius: 4px;
+  position: fixed;
+  left: 6.5rem;
+  top: 1rem;
+  z-index: 2000;
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+
+.navigation__background {
+  height: 3.5rem;
+  width: 5rem;
+  background-color: #000;
+  position: fixed;
+  left: 7rem;
+  top: 1.5rem;
+  z-index: 1000;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  width: 0;
+  opacity: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
+
+.navigation__item {
+  margin: .5rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #ccc;
+  font-family: 'Adobe Clean';
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: all .3s; }
+
+.navigation__link:hover {
+  transform: scale(1.1); }
+
+.navigation__link:active {
+  transform: scale(1); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2.1rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    display: inline-block;
+    width: 2.2rem;
+    height: 1.3px;
+    background-color: #ccc; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: .3rem;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.7rem; }
+  .navigation__icon::after {
+    top: .7rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -.9rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: .9rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before,
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  left: 0; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  transform: rotate(-135deg); }
